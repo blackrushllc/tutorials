@@ -3,6 +3,30 @@
 // - Wire "Open in UI-BASIC Editor" buttons to postMessage with example files
 
 (function () {
+  function getRuntimeConfig() {
+    const runtime = window.UIBASIC_RUNTIME || {};
+    const params = new URLSearchParams(window.location.search || "");
+    return {
+      debug: Boolean(runtime.debug) || params.get("debug") === "1",
+      targetOrigin: runtime.parentOrigin || params.get("parentOrigin") || "*",
+    };
+  }
+
+  const runtimeConfig = getRuntimeConfig();
+
+  function debugLog(label, payload) {
+    if (!runtimeConfig.debug) return;
+    try {
+      if (typeof payload === "undefined") {
+        console.debug("[UIBASIC DEBUG]", label);
+      } else {
+        console.debug("[UIBASIC DEBUG]", label, payload);
+      }
+    } catch (e) {
+      // Ignore debug logging failures.
+    }
+  }
+
   // Prevent F5 inside the iframe from refreshing the whole IDE
   document.addEventListener(
     "keydown",
@@ -46,6 +70,26 @@
     return files;
   }
 
+  function sendOpenExample(message) {
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage(message, runtimeConfig.targetOrigin);
+      debugLog("postMessage sent", {
+        targetOrigin: runtimeConfig.targetOrigin,
+        type: message.type,
+        exampleId: message.exampleId,
+      });
+      return;
+    }
+
+    if (typeof window.UIBasicStandaloneOpenExample === "function") {
+      window.UIBasicStandaloneOpenExample(message);
+      debugLog("standalone fallback invoked", message);
+      return;
+    }
+
+    debugLog("no open-example receiver available", message);
+  }
+
   function handleOpenClick(event) {
     const btn = event.currentTarget;
     const exampleId = btn.getAttribute("data-example-id");
@@ -66,8 +110,7 @@
       files: files,
     };
 
-    // Send to parent IDE. You can restrict origin if you like.
-    window.parent.postMessage(message, "*");
+    sendOpenExample(message);
   }
 
   function initExampleButtons() {

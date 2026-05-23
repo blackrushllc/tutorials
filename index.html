@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>UI-BASIC Learning</title>
-  <script src="../redirect.js"></script>
+  <script src="./redirect.js"></script>
+  <script src="./bootstrap.js"></script>
   <style>
     body{ font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin:0; padding:0; line-height:1.5; color:#222; }
     header{ background:#0a1633; color:#e6f0ff; padding:16px 20px; position:sticky; top:0; z-index:1; }
@@ -12,8 +13,8 @@
     nav{ display:flex; gap:12px; margin-top:8px; flex-wrap:wrap; }
     nav a{ color:#9ad1ff; text-decoration:none; font-weight:600; }
     nav a:hover{ text-decoration:underline; }
-    main{ padding:16px 20px 40px; }
-    section{ margin:24px 0; max-width: 920px; }
+    main{ padding:16px 20px 40px; max-width:500px; width:100%; margin:0 auto; box-sizing:border-box; }
+    section{ margin:24px 0; max-width: 500px; }
     section h2{ border-bottom:1px solid #ddd; padding-bottom:6px; }
     .muted{ color:#666; }
     footer{ border-top:1px solid #eee; padding:16px 20px; color:#555; }
@@ -22,7 +23,7 @@
 <body>
   <header>
     <nav>
-      <a href="/html/index.html">Top</a>
+      <a href="index.html">Top</a>
       <a href="#cheatsheet">Quick Start</a>
       <a href="#lessons">Lessons</a>
       <a href="#more-info">More Info</a>
@@ -30,14 +31,14 @@
   </header>
   <main>
     <button id="kala-intro-video" style="width:100%;margin-bottom:6px;" onclick="">Watch: Kala Welcomes and introduces you to Learning to Code</button>
-    <div id='kala-video-div' style="display:block;padding:0; max-width:920px; margin-bottom:24px;">
+    <div id='kala-video-div' style="display:block;padding:0; max-width:500px; margin-bottom:24px;">
         <video style="max-width:100%;width:100%;"  data-video-name="kala1a" controls>
             <source src="videos/KALA1a.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
     <button id="skye-intro-video" style="width:100%;margin-bottom:6px;">Watch: Skye gives you a visual tour of what's on this page</button>
-      <div id='skye-video-div' style="display:none;padding:0; max-width:920px; margin-bottom:24px;">
+      <div id='skye-video-div' style="display:none;padding:0; max-width:500px; margin-bottom:24px;">
           <video style="max-width:100%;width:100%;"  data-video-name="skye1a" controls>
               <source src="videos/SKYE1a.mp4" type="video/mp4">
               Your browser does not support the video tag.
@@ -45,18 +46,18 @@
       </div>
 
 
-      Ready? Proceed to the <a href="/html/lessons/001/">first lesson</a> or jump to <a href="#lessons">Lessons</a>
+      Ready? Proceed to the <a href="lessons/001/">first lesson</a> or jump to <a href="#lessons">Lessons</a>
     <hr>
       <section id="cheatsheet">
 
           <nav style="background:#eee; padding:8px 20px;">
-              <a href="/html/index.html">Top</a>
+              <a href="index.html">Top</a>
               <a href="#cheatsheet">Quick Start</a>
               <a href="#lessons">Lessons</a>
               <a href="#more-info">More Info</a>
           </nav>
           <h3>Quick-Start - Keyboard Shortcuts</h3>
-          <div style="background-color: #f62; color:black; padding:12px; border-radius:4px; max-width:920px; margin-bottom:24px;">
+          <div style="background-color: #f62; color:black; padding:12px; border-radius:4px; max-width:500px; margin-bottom:24px;">
               <ul>
                   <li>Press <code>F6</code> to toggle between your editor and the BASIC terminal.</li>
                   <li>Press <code>F9</code> to run your program when the editor has focus.</li>
@@ -77,7 +78,7 @@
 
     <section id="lessons">
             <nav style="background:#eee; padding:8px 20px;">
-                <a href="/html/index.html">Top</a>
+                <a href="index.html">Top</a>
                 <a href="#cheatsheet">Quick Start</a>
                 <a href="#lessons">Lessons</a>
                 <a href="#more-info">More Info</a>
@@ -87,7 +88,7 @@
           Mauris vitae nibh vel nisl viverra faucibus eget non lacus. Aliquam mollis arcu vitae hendrerit efficitur.
           Nulla facilisi.</p>
       <ol>
-          <li><a href="/html/lessons/001/">Lesson 1 - Getting Started With the Basics</a></li>
+          <li><a href="lessons/001/">Lesson 1 - Getting Started With the Basics</a></li>
           <li><a href="#lesson-2">Lesson 2: todo</a></li>
           <li><a href="#lesson-3">Lesson 3: todo</a></li>
           <li><a href="#lesson-4">Lesson 4: todo</a></li>
@@ -95,15 +96,15 @@
 
       <h3 id="lesson-2">Lesson 2: todo</h3>
         <p>In this lesson we will ...</p>
-        <a href="/html/lessons/002/">Start</a>
+        <a href="lessons/002/">Start</a>
 
       <h3 id="lesson-3">Lesson 3:todo</h3>
         <p>In this lesson we will ...</p>
-        <a href="/html/lessons/003/">Start</a>
+        <a href="lessons/003/">Start</a>
 
       <h3 id="lesson-4">Lesson 4:todo</h3>
         <p>In this lesson we will ...</p>
-        <a href="/html/lessons/004/">Start</a>
+        <a href="lessons/004/">Start</a>
 
 
 
@@ -113,7 +114,7 @@
 
     <section id="more-info">
         <nav style="background:#eee; padding:8px 20px;">
-            <a href="/html/index.html">Top</a>
+            <a href="index.html">Top</a>
             <a href="#cheatsheet">Quick Start</a>
             <a href="#lessons">Lessons</a>
             <a href="#more-info">More Info</a>
