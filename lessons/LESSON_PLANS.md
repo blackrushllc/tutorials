@@ -4,8 +4,8 @@
 
 ### Introduction Video
 - KALA_FUNDAMENTAL: In this tutorial we are going to learn the fundamental concepts of programming with UI-BASIC. 
-- We are going to write simple applications the demonstrate the core concepts of programming.  
-- By the end of this tutorial you are going to have a general understanding how how to write code in any programming language.
+- We are going to write simple applications that demonstrate the core concepts of programming.  
+- By the end of this tutorial you are going to have a general understanding how  to write code in any programming language.
 ### Example 1 - Hello World
 ```
 print "Hello from UI-BASIC"
