@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>UI-BASIC Tutorial | Chapter 5: Variables and Data Types</title>
+    <script src="../../redirect.js"></script>
+    <script src="../../bootstrap.js"></script>
+    <link rel="stylesheet" href="../../tutorial.css" />
+</head>
+<body>
+
+<article class="tutorial"
+        data-chapter="5"
+        data-slug="variables-and-data-types">
+
+    <h3><a href="../../lessons/004"><<<</a> Chapter 5 | Variables and Data Types <a href="../../lessons/006">>>></a></h3>
+
+    <video class="tutorial-video"
+            controls
+            controlsList="nofullscreen noremoteplayback nodownload"
+            disablePictureInPicture
+            playsinline>
+        <source src="YoBASIC5.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+
+    <p>In this chapter you will learn about variables and data types in UI-BASIC. A variable is a named container that stores a value that your program can use and change. UI-BASIC supports several data types including numbers and text (strings).</p>
+
+    <!-- ==========================
+        Example 1: Numeric Variable
+         ========================== -->
+
+    <section class="example"
+            data-example-id="ch5-numericvar"
+            data-example-title="NUMVAR.BAS">
+        <div class="example-header">
+            <h2>Example 1 | Numeric Variable</h2>
+            <button class="example-open"
+                    data-example-id="ch5-numericvar">
+                Open in UI-BASIC Editor
+            </button>
+        </div>
+        <ol>
+            <li>Click the button to open this program in a new editor tab.</li>
+            <li>Then click the Run button or press F9 to run the program.</li>
+        </ol>
+        <div class="example-files">
+            <h3>NUMVAR.BAS</h3>
+            <pre data-file-name="NUMVAR.BAS"
+                    data-file-language="basic"
+                    data-file-role="main">
+// A numeric variable stores a number
+// Variable names do not use a dollar sign
+
+LET score = 100
+LET bonus = 25
+LET total = score + bonus
+
+PRINT "Score: "; score
+PRINT "Bonus: "; bonus
+PRINT "Total: "; total
+
+// Try changing the values of score and bonus and run it again
+</pre>
+        </div>
+        <p>
+            LET assigns a value to a variable. You can use variables in math expressions just like regular numbers. Notice that numeric variable names have no special symbol.
+        </p>
+    </section>
+
+    <!-- ==========================
+        Example 2: String Variable
+         ========================== -->
+
+    <section class="example"
+            data-example-id="ch5-stringvar"
+            data-example-title="STRINGVAR.BAS">
+        <div class="example-header">
+            <h2>Example 2 | String Variable</h2>
+            <button class="example-open"
+                    data-example-id="ch5-stringvar">
+                Open in UI-BASIC Editor
+            </button>
+        </div>
+        <ol>
+            <li>Click the button to open this program in a new editor tab.</li>
+            <li>Then click the Run button or press F9 to run the program.</li>
+        </ol>
+        <div class="example-files">
+            <h3>STRINGVAR.BAS</h3>
+            <pre data-file-name="STRINGVAR.BAS"
+                    data-file-language="basic"
+                    data-file-role="main">
+// A string variable stores text
+// String variable names always end with a dollar sign $
+
+LET name$ = "Justin"
+LET greeting$ = "Hello there, "
+
+PRINT greeting$ + name$
+PRINT "Welcome to UI-BASIC!"
+
+// Try changing name$ to your own name
+</pre>
+        </div>
+        <p>
+            String variables always end with a <strong>$</strong> (dollar sign). Text values must be wrapped in double quotes. You can join two strings together using the <strong>+</strong> operator — this is called concatenation.
+        </p>
+    </section>
+
+    <!-- ==========================
+        Example 3: Multiple Data Types
+         ========================== -->
+
+    <section class="example"
+            data-example-id="ch5-datatypes"
+            data-example-title="DATATYPES.BAS">
+        <div class="example-header">
+            <h2>Example 3 | Mixing Data Types</h2>
+            <button class="example-open"
+                    data-example-id="ch5-datatypes">
+                Open in UI-BASIC Editor
+            </button>
+        </div>
+        <ol>
+            <li>Click the button to open this program in a new editor tab.</li>
+            <li>Then click the Run button or press F9 to run the program.</li>
+        </ol>
+        <div class="example-files">
+            <h3>DATATYPES.BAS</h3>
+            <pre data-file-name="DATATYPES.BAS"
+                    data-file-language="basic"
+                    data-file-role="main">
+// Combining string and numeric variables in output
+
+LET player$ = "Player One"
+LET level = 5
+LET health = 100
+LET weapon$ = "Lightsaber"
+
+PRINT player$
+PRINT "Level: "; level
+PRINT "Health: "; health
+PRINT "Weapon: "; weapon$
+
+// Try adding a new variable for score and printing it
+</pre>
+        </div>
+        <p>
+            You can use both string and numeric variables in the same program. Use <strong>;</strong> (semicolon) to print a label and a number on the same line. Use <strong>+</strong> to join two string values together.
+        </p>
+    </section>
+
+</article>
+
+</body>
+</html>
