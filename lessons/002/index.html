@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>UI-BASIC Tutorial – Chapter 2: Core Examples</title>
+    <title>UI-BASIC Tutorial – Chapter 2: Variables and Functions</title>
     <script src="../../redirect.js"></script>
     <script src="../../bootstrap.js"></script>
 
@@ -14,19 +14,20 @@
          data-chapter="2"
          data-slug="core-examples">
 
-    <h3><a href="../../lessons/001"><<</a> Chapter 2 – Core Examples  <a href="../../lessons/003">>></a></h3>
+    <h3><a href="../../lessons/001/index.html"><<</a> Chapter 2 – Variables and Functions  <a href="../../lessons/003/index.html">>></a></h3>
 
     <video class="tutorial-video"
            controls
            controlsList="nofullscreen noremoteplayback nodownload"
            disablePictureInPicture
            playsinline>
-        <source src="yoBASIC2.mp4" type="video/mp4" />
-        Your browser does not support the video tag.</video>
+        <source src="../../videos/TIFF_VARS_FUNCS_OPEN.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
 
-    <p>This chapter gives you a single, longer program that walks through many
+    <p>Review: Here is a single, longer program that walks through many
     tiny examples in sequence. Load it into the editor, skim through the code,
-    and run it to see how the basics work together.</p>
+    and run it to see how the basics work together. Spend some time with this, then continue below</p>
 
     <section class="example"
              data-example-id="ch2-megademo"
@@ -212,8 +213,184 @@ PRINT "Feel free to edit the code and run again!"
         </p>
     </section>
 
+    <p>
+
+        To use a function, we must first create it.  After we create a function, we then call it by name whenever we want to use it.
+        <br/>
+        <br/>
+        In this example, we are calling the function PRINTME, which prints text to the screen in between lines of dashes.
+
+        Spend some time with this, then continue below
+    </p>
+
+    <!-- ========================
+         Example 1: FOR/NEXT Loop
+         ======================== -->
+
+    <section class="example"
+             data-example-id="ch2-printme"
+             data-example-title="PRINTME.BAS">
+        <div class="example-header">
+            <h2>Example 1 | "PRINTME" Function</h2>
+            <button class="example-open"
+                    data-example-id="ch2-printme">
+                Open in UI-BASIC Editor
+            </button>
+        </div>
+        <ol>
+            <li>Click the button to open this program in a new editor tab.</li>
+            <li>Then click the Run button or press F9 to run the program.</li>
+        </ol>
+        <div class="example-files">
+            <h3>PRINTME.BAS</h3>
+            <pre data-file-name="PRINTME.BAS"
+                 data-file-language="basic"
+                 data-file-role="main">
+// Create a function called PRINTME
+FUNCTION PRINTME()
+  print "------------------"
+  print "Hello from UI-BASIC"
+  print "------------------"
+END FUNCTION
+
+// Then run the function
+PRINTME()
+            </pre>
+        </div>
+
+    </section>
+
+
+    <section class="example"
+             data-example-id="ch2-printme2"
+             data-example-title="PRINTME2.BAS">
+        <div class="example-header">
+            <h2>Example 2 | "PRINTME2" Function</h2>
+            <button class="example-open"
+                    data-example-id="ch2-printme2">
+                Open in UI-BASIC Editor
+            </button>
+        </div>
+        <ol>
+            <li>Click the button to open this program in a new editor tab.</li>
+            <li>Then click the Run button or press F9 to run the program.</li>
+        </ol>
+        <div class="example-files">
+            <h3>PRINTME2.BAS</h3>
+            <pre data-file-name="PRINTME2.BAS"
+                 data-file-language="basic"
+                 data-file-role="main">
+// Create a function called PRINTME that takes a string variable as a parameter
+FUNCTION PRINTME(TextToPrint$)
+  print "------------------"
+  print TextToPrint$
+  print "------------------"
+END FUNCTION
+
+// Then run the function with a different string each time
+A$ = "Hello from UI-BASIC"
+PRINTME(A$)
+
+B$ = "I can reuse functions!"
+PRINTME(B$)
+            </pre>
+        </div>
+
+    </section>
+
+
+
+    <section class="example"
+             data-example-id="ch2-printme3"
+             data-example-title="PRINTME3.BAS">
+        <div class="example-header">
+            <h2>Example 3 | "PRINTME3" Function</h2>
+            <button class="example-open"
+                    data-example-id="ch2-printme">
+                Open in UI-BASIC Editor
+            </button>
+        </div>
+        <ol>
+            <li>Click the button to open this program in a new editor tab.</li>
+            <li>Then click the Run button or press F9 to run the program.</li>
+        </ol>
+        <div class="example-files">
+            <h3>PRINTME3.BAS</h3>
+            <pre data-file-name="PRINTME3.BAS"
+                 data-file-language="basic"
+                 data-file-role="main">
+// Create a function called PRINTME that takes a two string variables as a parameters
+FUNCTION PRINTME(TextToPrint$, LinesToPrint$)
+  print LinesToPrint$
+  print TextToPrint$
+  print LinesToPrint$
+END FUNCTION
+
+// Then run the function with a different string each time
+A$ = "Hello from UI-BASIC"
+PRINTME(A$, "------------------")
+
+B$ = "I can reuse functions!"
+PRINTME(B$, "====")
+            </pre>
+        </div>
+
+    </section>
+
+    <section class="example"
+             data-example-id="ch2-fib"
+             data-example-title="PRINTME.BAS">
+        <div class="example-header">
+            <h2>Example 1 | "FIB" Function</h2>
+            <button class="example-open"
+                    data-example-id="ch2-fib">
+                Open in UI-BASIC Editor
+            </button>
+        </div>
+        <ol>
+            <li>Click the button to open this program in a new editor tab.</li>
+            <li>Then click the Run button or press F9 to run the program.</li>
+        </ol>
+        <div class="example-files">
+            <h3>FUB.BAS</h3>
+            <pre data-file-name="FIB.BAS"
+                 data-file-language="basic"
+                 data-file-role="main">
+// Create a function called fib() that calculates
+
+FUNCTION fib%(n%)
+    IF n% < 2 THEN
+        rVal% =  n%
+    ELSE
+        rVal% =   fib%(n% - 1) + fib%(n% - 2)
+    END IF
+    RETURN rVal%
+END FUNCTION
+
+PRINT fib%(10); // 55
+            </pre>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <video class="tutorial-video"
+           controls
+           controlsList="nofullscreen noremoteplayback nodownload"
+           disablePictureInPicture
+           playsinline>
+        <source src="../../videos/TIFF_VARS_FUNCS_CLOSE.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
     <nav class="chapter-nav">
-        <h3><a href="lessons/001"><<</a> Previous - Next  <a href="lessons/003">>></a></h3>
+        <h3><a href="../../lessons/001/index.html"><<</a> Previous - Next  <a href="../../lessons/003/index.html">>></a></h3>
     </nav>
 </article>
 

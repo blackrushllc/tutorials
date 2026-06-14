@@ -101,9 +101,10 @@
       '  <meta name="viewport" content="width=device-width, initial-scale=1" />' +
       "  <title>UI-BASIC Standalone Preview</title>" +
       "  <style>" +
-      "    body { margin: 0; padding: 0; background: #020617; color: #e2e8f0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; overflow: hidden; }" +
-      "    .ui-shell { width: 100vw !important; max-width: none !important; height: 100vh !important; margin: 0 !important; padding: 0 !important; display: flex; }" +
-      "    .ui-shell-editor { width: min(420px, 42vw); min-width: 260px; max-width: 520px; height: 100%; box-sizing: border-box; border-right: 1px solid #334155; background: blue; padding: 12px; display: flex; flex-direction: column; gap: 8px; }" +
+      "    html, body { width: 100% !important; max-width: none !important; height: 100% !important; margin: 0 !important; padding: 0 !important; overflow: hidden !important; }" +
+      "    body { background: #020617 !important; color: #e2e8f0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }" +
+      "    .ui-shell { position: fixed; inset: 0; width: 100vw !important; max-width: none !important; height: 100vh !important; margin: 0 !important; padding: 0 !important; display: flex; }" +
+      "    .ui-shell-editor { width: min(420px, 42vw); min-width: 260px; max-width: 520px; height: 100%; box-sizing: border-box; border-right: 1px solid #334155; background: #0f172a; padding: 12px; display: flex; flex-direction: column; gap: 8px; }" +
       "    .ui-shell-editor h1 { margin: 0; font-size: 1rem; }" +
       "    .ui-shell-editor p { margin: 0; font-size: 0.9rem; color: #cbd5e1; }" +
       "    .ui-shell-editor label { display: block; font-size: 0.8rem; color: #94a3b8; }" +
@@ -111,7 +112,7 @@
       "    .ui-shell-editor select { padding: 5px 6px; }" +
       "    .ui-shell-editor textarea { max-height: 600px; flex: 1; min-height: 0; padding: 8px; resize: none; }" +
       "    .ui-shell-status { font-size: 0.8rem; color: #93c5fd; }" +
-      "    .ui-shell-preview { flex: 1; min-width: 0; height: 100%; background: blue; display: flex; justify-content: flex-end; }" +
+      "    .ui-shell-preview { flex: 1; min-width: 0; height: 100%; background: #020617; display: flex; justify-content: flex-end; }" +
       "    .ui-shell-frame { width: min(100%, 500px); height: 100%; border: 0; background: #fff; display: block; }" +
       "    .ui-shell-debug { border: 1px dashed #475569; border-radius: 6px; padding: 8px; font-size: 0.75rem; background: #0b1220; }" +
       "    .ui-shell-debug pre { margin: 6px 0 0; white-space: pre-wrap; word-break: break-word; max-height: 180px; overflow: auto; color: #bfdbfe; }" +
