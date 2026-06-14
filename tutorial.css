@@ -74,6 +74,7 @@ button.example-open {
     width: 100%;
     max-width: 100%;
     height: auto;
+    max-height: 333px;
 }
 
 /* Keep native controls minimal via attributes in HTML; CSS vendor overrides omitted for portability */
