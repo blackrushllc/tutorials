@@ -2,41 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>UI-BASIC Tutorial | Chapter 3: Loops</title>
+    <title>UI-BASIC Tutorial – Chapter 3: Coming Soon</title>
     <script src="../../redirect.js"></script>
     <script src="../../bootstrap.js"></script>
+
     <link rel="stylesheet" href="../../tutorial.css" />
 </head>
 <body>
 
 <article class="tutorial"
-        data-chapter="3"
-        data-slug="loops">
+         data-chapter="3"
+         data-slug="coming-soon">
 
-    <h3><a href="../../lessons/002"><<</a> Chapter 3 | Loops <a href="../../lessons/004">>></a></h3>
+    <h3><a href="../../lessons/002"><<</a> Chapter 3 – TODO  <a href="../../lessons/004">>></a></h3>
 
     <video class="tutorial-video"
-        controls
-        controlsList="nofullscreen noremoteplayback nodownload"
-        disablePictureInPicture
-        playsinline>
+           controls
+           controlsList="nofullscreen noremoteplayback nodownload"
+           disablePictureInPicture
+           playsinline>
         <source src="YoBASIC3.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-    </video>
+        Your browser does not support the video tag.</video>
 
-    <p>In this chapter you will learn how to use loops in UI-BASIC. Loops simply let you repeat a block of code multiple times without writing it over and over again. They are one of the most powerful tools in programming.</p>
-
-    <!-- ========================
-         Example 1: FOR/NEXT Loop
-         ======================== -->
+    <p>This chapter is a placeholder for upcoming lessons. For now, you can
+    open the example below and run it in the UI-BASIC editor to verify your
+    setup is working.</p>
 
     <section class="example"
-            data-example-id="ch3-fornext"
-            data-example-title="FORNEXT.BAS">
+             data-example-id="ch3-placeholder"
+             data-example-title="PLACEHOLDER.BAS">
         <div class="example-header">
-            <h2>Example 1 | FOR/NEXT Loop</h2>
-            <button class="example-open"
-                    data-example-id="ch3-fornext">
+            <h2>Example 1 – Placeholder Program</h2>
+            <button class="example-open" data-example-id="ch3-placeholder">
                 Open in UI-BASIC Editor
             </button>
         </div>
@@ -45,169 +42,29 @@
             <li>Then click the Run button or press F9 to run the program.</li>
         </ol>
         <div class="example-files">
-            <h3>FORNEXT.BAS</h3>
-            <pre data-file-name="FORNEXT.BAS"
-                data-file-language="basic"
-                data-file-role="main">
-// A FOR/NEXT loop repeats a block of code a set number of times
-// The variable i counts from 1 to 5
-
-FOR i = 1 TO 5
-    PRINT "Loop number ", i
-NEXT i
-
-// Try changing the 5 to a 10 and run it again
-// What happens if you change it to 1?
+            <h3>PLACEHOLDER.BAS</h3>
+            <pre data-file-name="PLACEHOLDER.BAS"
+                 data-file-language="basic"
+                 data-file-role="main">
+REM This is a placeholder example for Chapter 3.
+REM We'll add more content here in a future update.
+PRINT "UI-BASIC Chapter 3 Placeholder"
+PRINT "Your environment is working!"
             </pre>
         </div>
+
         <p>
-            A FOR/NEXT loop is the most common loop in programming. You tell it where to start, where to stop, and it counts for you. The variable <strong>i</strong> is called the loop counter — it goes up by 1 each time the loop runs.
-        </p>
-    </section>
-
-    <!-- ========================
-         Example 2: WHILE Loop
-         ======================== -->
-
-    <section class="example"
-            data-example-id="ch3-while"
-            data-example-title="WHILELOOP.BAS">
-        <div class="example-header">
-            <h2>Example 2 | WHILE/END WHILE Loop</h2>
-            <button class="example-open"
-                    data-example-id="ch3-while">
-                Open in UI-BASIC Editor
-            </button>
-        </div>
-        <ol>
-            <li>Click the button to open this program in a new editor tab.</li>
-            <li>Then click the Run button or press F9 to run the program.</li>
-        </ol>
-        <div class="example-files">
-            <h3>WHILELOOP.BAS</h3>
-            <pre data-file-name="WHILELOOP.BAS"
-                data-file-language="basic"
-                data-file-role="main">
-// A WHILE loop keeps running as long as a condition is true
-// This loop counts down from 5 to 1
-
-count% = 5
-
-WHILE count% > 0
-    PRINT "Countdown: ", count%
-    count% = count% - 1
-END WHILE
-
-PRINT "Blastoff!"
-
-// Try changing the starting number
-// What happens if count% starts at 0?
-            </pre>
-        </div>
-        <p>
-            A WHILE loop is useful when you don't know exactly how many times you need to loop — you just want to keep going until a condition eventually becomes false. Be cautious: if the condition never becomes false, the loop runs forever and ever and ever!
-        </p>
-    </section>
-
-    <!-- ========================
-         Example 3: Nested Loops
-         ======================== -->
-
-    <section class="example"
-            data-example-id="ch3-nested"
-            data-example-title="NESTED.BAS">
-        <div class="example-header">
-            <h2>Example 3 | Nested Loops</h2>
-            <button class="example-open"
-                    data-example-id="ch3-nested">
-                Open in UI-BASIC Editor
-            </button>
-        </div>
-        <ol>
-            <li>Click the button to open this program in a new editor tab.</li>
-            <li>Then click the Run button or press F9 to run the program.</li>
-        </ol>
-        <div class="example-files">
-            <h3>NESTED.BAS</h3>
-            <pre data-file-name="NESTED.BAS"
-                data-file-language="basic"
-                data-file-role="main">
-// You can put a loop inside another loop
-// This is called a nested loop
-// The inner loop runs completely for every single step of the outer loop
-
-FOR row = 1 TO 3
-    FOR col = 1 TO 3
-        PRINT row, " x ", col, " = ", row * col
-    NEXT col
-NEXT row
-
-// Try changing the 3s to different numbers
-// Can you make a multiplication table up to 5 x 5?
-            </pre>
-        </div>
-        <p>
-            Think of Nested Loops somewhat as a bird's nest - the outer loop is the nest, and the inner loop is the eggs inside it. For every one nest, there are several eggs! Thats how they work, the inner loop completes all of its cycles BEFORE the outer loop moves on
-        </p>
-    </section>
-
-    <!-- ========================
-         Example 4: STEP
-         ======================== -->
-
-    <section class="example"
-            data-example-id="ch3-step"
-            data-example-title="STEP.BAS">
-        <div class="example-header">
-            <h2>Example 4 | Counting with STEP</h2>
-            <button class="example-open"
-                    data-example-id="ch3-step">
-                Open in UI-BASIC Editor
-            </button>
-        </div>
-        <ol>
-            <li>Click the button to open this program in a new editor tab.</li>
-            <li>Then click the Run button or press F9 to run the program.</li>
-        </ol>
-        <div class="example-files">
-            <h3>STEP.BAS</h3>
-            <pre data-file-name="STEP.BAS"
-                data-file-language="basic"
-                data-file-role="main">
-// STEP lets you control how much the loop counter changes each time
-// Count by 2s
-PRINT "Even numbers:"
-FOR i = 2 TO 10 STEP 2
-    PRINT i
-NEXT i
-
-PRINT
-
-// Count backwards
-PRINT "Countdown:"
-FOR i = 10 TO 1 STEP -1
-    PRINT i
-NEXT i
-
-PRINT "Go!"
-
-// Try STEP 3 or STEP 5
-// Can you print only odd numbers from 1 to 20?
-            </pre>
-        </div>
-        <p>
-            STEP lets you skip numbers or even count backwards. A negative STEP counts down. This is very useful because it gives you much more control over how your loop operates.
+            This placeholder prints a couple of lines to the terminal. We'll replace
+            it with a more substantial example as Chapter 3 is developed.
         </p>
     </section>
 
     <nav class="chapter-nav">
-        <h3><a href="lessons/002"><<</a> Previous - Next <a href="lessons/004">>></a></h3>
+        <h3><a href="lessons/002"><<</a> Previous - Next  <a href="lessons/004">>></a></h3>
     </nav>
-
 </article>
 
 <!-- Iframe-side API: send "open example" messages to parent -->
 <script src="../../tutorial.js"></script>
 </body>
 </html>
-
