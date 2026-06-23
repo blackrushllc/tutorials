@@ -262,109 +262,66 @@ NEXT i
 - In the next tutorial, we will learn about arrays, lists, and dictionaries. See you there!
 ---
 
-## TUTORIAL PAGE 004 - Arrays, Lists, and Dictionaries
+## TUTORIAL PAGE 004 - Arrays and Lists
 
 ### Introduction Video Todo: Kala
-- Things are starting to get interesting now! We're going to learn about arrays, lists and dictionaries in UI-BASIC.
-- These are data structures that allow us to store and organize multiple values in a single variable, and they are essential for handling complex data in our programs.
-- By combining loops, logic and functions with arrays, lists and dictionaries, we can create powerful and efficient programs.
-- By the end of this tutorial you will understand how to use arrays, lists and dictionaries
-### Example 1 - Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Hello World...
-### Example 2 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-### Example 3 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-### Example 4 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-###  Recap Video Todo: Kala
-- In this tutorial we learned about arrays, lists, and dictionaries in UI-BASIC.
-- We learned how to create arrays, lists, and dictionaries, and how to use them to store and organize data.
-- These data structures are essential for handling complex data in our programs.
-- In the next tutorial, we will learn about classes and objects.
+- In this chapter you will learn about arrays in UI-BASIC. An array is a variable that can hold multiple values at once. Instead of creating a separate variable for every single value, you can store them all in one place and access them by number. Think of it like a row of lockers — each locker has a number, and you can put something different in each one.
+
+### Example 1 | Your First Array
+- BASICARRAY.BAS — Create a numeric array with DIM, assign values, and print specific elements.
+
+### Example 2 | Array of Words
+- STRINGARRAY.BAS — Create a string array using the dollar sign, loop through it with FOR/NEXT.
+
+### Example 3 | Adding Up an Array
+- ARRAYLOOP.BAS — Use a loop to process every item in an array, calculate total and average score.
+
+### Example 4 | A Grid of Values
+- GRID.BAS — Introduction to 2D arrays using DIM grid(3,3), like a spreadsheet with rows and columns.
+
+### Recap Video Todo: Kala
+- Arrays let you store multiple values in a single variable and access them by number. Whether you're working with numbers or text, arrays keep your data organized and make it easy to process with loops. 2D arrays take it further — letting you store data in rows and columns, just like a spreadsheet.
+
 ---
 
-## TUTORIAL PAGE 005 - Classes and Objects
+## TUTORIAL PAGE 005 - Variables and Data Types
 
 ### Introduction Video Todo: Taleah
-- Objects are like arrays, lists and dictionaries, but they are more powerful and flexible because they can also contain functions and code.
-- Objects allow us to create complex data structures that can represent real-world entities and behaviors.
-- Classes are like blueprints for creating objects. They define the code and data that an object will have.
-- Classes and Objects are a fundamental concept in object-oriented programming, which is a popular paradigm used in many modern programming languages.
-- Classes and Objects are especially cool because you can create reusable code that can be shared and extended across different programs.
-- By the end of this tutorial you will understand how to create classes and use objects in UI-BASIC
-### Example 1 - Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Hello World...
-### Example 2 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-### Example 3 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-### Example 4 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-###  Recap Video Todo: Taleah
-- In this tutorial we learned about classes and objects in UI-BASIC.
-- We learned how to create classes, which are like blueprints for creating objects.
-- We learned how to use objects, which are reusable components that can be used to build web pages.
-- In the next tutorial, we will learn about how to store data in UI-BASIC.
+- In this chapter you will learn about variables and data types in UI-BASIC. A variable is a named container that stores a value your program can use and change. UI-BASIC supports several data types including numbers and text (strings).
+
+### Example 1 | Numeric Variable
+- NUMERICVAR.BAS — Declare and use a numeric variable with LET.
+
+### Example 2 | String Variable
+- STRINGVAR.BAS — Declare and use a string variable using the dollar sign convention.
+
+### Example 3 | Multiple Data Types
+- DATATYPES.BAS — Combine string and numeric variables in the same program using semicolons to print mixed output.
+
+### Recap Video Todo: Taleah
+- Variables are the foundation of every program. In UI-BASIC, numeric variables store numbers and string variables store text using the dollar sign convention. Knowing your data types and how to combine them in output is the first step to writing real, useful programs.
+
 ---
 
-## TUTORIAL PAGE 006 - Web Pages
+## TUTORIAL PAGE 006 - Data Cleaning
 
 ### Introduction Video Todo: Taleah
-- In this tutorial we are going to learn about how to create web pages with UI-BASIC.
-- UI-BASIC has built-in support for creating web pages and web applications, which makes it easy to build dynamic and interactive web content.
-- We will also learn how to create "Views" in UI-BASIC, which are reusable components that can be used to build web pages.
-- By the end of this tutorial you will understand how to create web pages and views in UI-BASIC.
-### Example 1 - Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Hello World...
-### Example 2 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-### Example 3 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-### Example 4 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-###  Recap Video Todo: Taleah 
-- In this tutorial we learned about how to create web pages with UI-BASIC.
-- We learned how to create views, which are reusable components that can be used to build web pages.
-- We also learned how to use UI-BASIC's web server to host and share web pages online.
-- In the next tutorial, we will learn about how to store data in UI-BASIC.
----
+- In this chapter you will learn how to clean and manipulate string data in UI-BASIC. In the real world, data is often messy — values may be too long, too short, or need to be broken apart. UI-BASIC gives us tools to inspect and fix strings using LEN, LEFT$, RIGHT$, and MID$.
+
+### Example 1 | Checking Length
+- LEN — Inspect the length of a string value.
+
+### Example 2 | Extracting with LEFT$ and RIGHT$
+- Extract characters from the beginning or end of a string.
+
+### Example 3 | Extracting with MID$
+- Pull characters from any position inside a string.
+
+### Example 4 | Putting It Together
+- Combine LEN, LEFT$, RIGHT$, and MID$ to parse real-world data like product codes, dates, phone numbers, and IDs.
+
+### Recap Video Todo: Taleah
+- Combining LEN, LEFT$, RIGHT$, and MID$ gives you full control over string data. In the real world, product codes, dates, phone numbers, and IDs are often stored as a single string — knowing how to break them apart is a core data skill.
 
 ## TUTORIAL PAGE 007 -  Storing Data
 
