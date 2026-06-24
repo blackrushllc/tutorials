@@ -264,8 +264,14 @@ NEXT i
 
 ## TUTORIAL PAGE 004 - Arrays and Lists
 
-### Introduction Video Todo: Kala
+### Introduction Video Todo: unassigned - Updated but not re-recorded yet
 - In this chapter you will learn about arrays in UI-BASIC. An array is a variable that can hold multiple values at once. Instead of creating a separate variable for every single value, you can store them all in one place and access them by number. Think of it like a row of lockers — each locker has a number, and you can put something different in each one.
+
+  - Original Kala (still in website, it's fine for now): 
+  - Things are starting to get interesting now! We're going to learn about arrays, lists and dictionaries in UI-BASIC.
+  - These are data structures that allow us to store and organize multiple values in a single variable, and they are essential for handling complex data in our programs.
+  - By combining loops, logic and functions with arrays, lists and dictionaries, we can create powerful and efficient programs.
+  - By the end of this tutorial you will understand how to use arrays, lists and dictionaries
 
 ### Example 1 | Your First Array
 - BASICARRAY.BAS — Create a numeric array with DIM, assign values, and print specific elements.
@@ -279,15 +285,21 @@ NEXT i
 ### Example 4 | A Grid of Values
 - GRID.BAS — Introduction to 2D arrays using DIM grid(3,3), like a spreadsheet with rows and columns.
 
-### Recap Video Todo: Kala
+### Recap Video Todo: Updated - Victoria - In Progress
 - Arrays let you store multiple values in a single variable and access them by number. Whether you're working with numbers or text, arrays keep your data organized and make it easy to process with loops. 2D arrays take it further — letting you store data in rows and columns, just like a spreadsheet.
+
+- Original Kala (still in website):
+  - Arrays let you store multiple values in a single variable and access them by number. Whether you're working with numbers or text, arrays keep your data organized and make it easy to process with loops. 2D arrays take it further — letting you store data in rows and columns, just like a spreadsheet.
+  - We learned how to create arrays, lists, and dictionaries, and how to use them to store and organize data.
+  - These data structures are essential for handling complex data in our programs.
+  - In the next tutorial, we will learn about classes and objects.
 
 ---
 
 ## TUTORIAL PAGE 005 - Variables and Data Types
 
-### Introduction Video Todo: Taleah
-- In this chapter you will learn about variables and data types in UI-BASIC. A variable is a named container that stores a value your program can use and change. UI-BASIC supports several data types including numbers and text (strings).
+### Introduction Video Todo: Victoria - In Progress
+- In this chapter you will learn about variables and data types in UI-BASIC. A variable is a named container that stores a value your program can use and change. UI-BASIC supports several data types including numbers and text (or strings).
 
 ### Example 1 | Numeric Variable
 - NUMERICVAR.BAS — Declare and use a numeric variable with LET.
@@ -305,7 +317,7 @@ NEXT i
 
 ## TUTORIAL PAGE 006 - Data Cleaning
 
-### Introduction Video Todo: Taleah
+### Introduction Video Todo: Victoria In-Progress
 - In this chapter you will learn how to clean and manipulate string data in UI-BASIC. In the real world, data is often messy — values may be too long, too short, or need to be broken apart. UI-BASIC gives us tools to inspect and fix strings using LEN, LEFT$, RIGHT$, and MID$.
 
 ### Example 1 | Checking Length
@@ -320,7 +332,7 @@ NEXT i
 ### Example 4 | Putting It Together
 - Combine LEN, LEFT$, RIGHT$, and MID$ to parse real-world data like product codes, dates, phone numbers, and IDs.
 
-### Recap Video Todo: Taleah
+### Recap Video Todo:  Victoria In-Progress
 - Combining LEN, LEFT$, RIGHT$, and MID$ gives you full control over string data. In the real world, product codes, dates, phone numbers, and IDs are often stored as a single string — knowing how to break them apart is a core data skill.
 
 ## TUTORIAL PAGE 007 -  Storing Data
