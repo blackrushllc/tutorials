@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>UI-BASIC Tutorial | Chapter 7: User Input & Output</title>
+    <script src="../../redirect.js"></script>
+    <script src="../../bootstrap.js"></script>
+    <link rel="stylesheet" href="../../tutorial.css" />
+  </head>
+  <body>
+
+  <article class="tutorial"
+      data-chapter="7"
+      data-slug="input-output">
+
+    <h3><a href="../../lessons/006/index.html"><<</a> Chapter 7 | User Input & Output <a href="#">>></a></h3>
+
+    <video class="tutorial-video"
+        controls
+        controlsList="nofullscreen noremoteplayback nodownload"
+        disablePictureInPicture
+        playsinline>
+      <source src="../../videos/VQ_INPUT_OPEN.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <p>So far, our programs have just talked at people — printing messages and running quietly in the background like a toaster with commitment issues. In this chapter, that changes. We're going to teach our programs to listen. You'll learn how to ask the user a question, grab whatever they type on the keyboard, store it, and use it to decide what happens next.</p>
+
+    <!-- ==========================
+         Example 1: Basic Input
+         ========================== -->
+
+    <section class="example"
+        data-example-id="ch7-input"
+        data-example-title="BASICINPUT.BAS">
+      <div class="example-header">
+        <h2>Example 1 | Getting Input from the Keyboard</h2>
+        <button class="example-open"
+            data-example-id="ch7-input">
+          Open in UI-BASIC Editor
+        </button>
+      </div>
+      <ol>
+        <li>Click the button to open this program in a new editor tab.</li>
+        <li>Then click the Run button or press F9 to run the program.</li>
+      </ol>
+      <div class="example-files">
+        <h3>BASICINPUT.BAS</h3>
+        <pre data-file-name="BASICINPUT.BAS"
+            data-file-language="basic"
+            data-file-role="main">
+// Input pauses the program and waits for the user to type something.
+// Whatever they type gets stored in the variable you name.
+
+PRINT "What is your name?"
+INPUT name$
+
+PRINT "Nice to meet you, "; name$
+
+// Try changing the question and see what happens
+// INPUT always waits patiently - it will not move on until you press Enter
+        </pre>
+      </div>
+      <p>Input is how a program pauses and hands control to the user. It waits for keyboard text, and once you press Enter, whatever was typed gets stored in the variable you gave it — just like LET, except the value comes from the person using the program instead of your code.</p>
+    </section>
+
+    <!-- ==========================
+         Example 2: Prompting with Questions
+         ========================== -->
+
+    <section class="example"
+        data-example-id="ch7-prompt"
+        data-example-title="ASKQUESTIONS.BAS">
+      <div class="example-header">
+        <h2>Example 2 | Asking Multiple Questions</h2>
+        <button class="example-open"
+            data-example-id="ch7-prompt">
+          Open in UI-BASIC Editor
+        </button>
+      </div>
+      <ol>
+        <li>Click the button to open this program in a new editor tab.</li>
+        <li>Then click the Run button or press F9 to run the program.</li>
+      </ol>
+      <div class="example-files">
+        <h3>ASKQUESTIONS.BAS</h3>
+        <pre data-file-name="ASKQUESTIONS.BAS"
+            data-file-language="basic"
+            data-file-role="main">
+// You can ask as many questions as you want, one INPUT at a time
+
+PRINT "Let's get to know each other."
+
+PRINT "What is your favorite color?"
+INPUT color$
+
+PRINT "What is your favorite number?"
+INPUT favnum
+
+PRINT "Cool! Your favorite color is "; color$; " and your favorite number is "; favnum
+
+// Notice favnum has no dollar sign - it stores a number, not text.
+// Input works for both strings and numbers depending on the variable name.
+        </pre>
+      </div>
+      <p>Just like variables, INPUT respects the dollar sign rule — a variable name ending in <code>$</code> stores text, and one without it stores a number. Chaining several INPUT statements together lets you build simple forms, one question at a time.</p>
+    </section>
+
+    <!-- ==========================
+         Example 3: Combining Input into Output
+         ========================== -->
+
+    <section class="example"
+        data-example-id="ch7-combine"
+        data-example-title="ORDERFORM.BAS">
+      <div class="example-header">
+        <h2>Example 3 | Using Input to Shape Output</h2>
+        <button class="example-open"
+            data-example-id="ch7-combine">
+          Open in UI-BASIC Editor
+        </button>
+      </div>
+      <ol>
+        <li>Click the button to open this program in a new editor tab.</li>
+        <li>Then click the Run button or press F9 to run the program.</li>
+      </ol>
+      <div class="example-files">
+        <h3>ORDERFORM.BAS</h3>
+        <pre data-file-name="ORDERFORM.BAS"
+            data-file-language="basic"
+            data-file-role="main">
+// This is what a real program does - use input to change what happens next
+
+PRINT "Welcome to the drink stand!"
+PRINT "What would you like to order?"
+INPUT drink$
+
+PRINT "How many would you like?"
+INPUT qty
+
+PRINT "Coming right up: "; qty; " "; drink$; "(s)!"
+
+// This is the same idea behind every online order form,
+// every login screen, and every search bar you've ever used
+        </pre>
+      </div>
+      <p>This is where input starts to feel like a real program. The output isn't fixed anymore — it changes based on what the player typed. This same pattern, ask a question and respond to the answer, is the backbone of forms, search bars, and login screens everywhere, whether they're built with text input like this or with buttons and menus in a graphical interface.</p>
+    </section>
+
+    <!-- ==========================
+         Example 4: Putting It Together - Chat Game
+         ========================== -->
+
+    <section class="example"
+        data-example-id="ch7-chatgame"
+        data-example-title="CHATGAME.BAS">
+      <div class="example-header">
+        <h2>Example 4 | Putting It All Together: A Simple Chat Game</h2>
+        <button class="example-open"
+            data-example-id="ch7-chatgame">
+          Open in UI-BASIC Editor
+        </button>
+      </div>
+      <ol>
+        <li>Click the button to open this program in a new editor tab.</li>
+        <li>Then click the Run button or press F9 to run the program.</li>
+      </ol>
+      <div class="example-files">
+        <h3>CHATGAME.BAS</h3>
+        <pre data-file-name="CHATGAME.BAS"
+            data-file-language="basic"
+            data-file-role="main">
+// A simple chat game - the computer "talks" back based on what you type
+
+PRINT "Hi there! I'm YoBASIC. What's your name?"
+INPUT name$
+
+PRINT "Nice to meet you, "; name$; "! How are you feeling today?"
+INPUT mood$
+
+PRINT "Ah, "; mood$; "? Good to know."
+
+PRINT "What's your favorite hobby, "; name$; "?"
+INPUT hobby$
+
+PRINT "No way! "; hobby$; " sounds awesome."
+PRINT "Thanks for chatting with me, "; name$; ". See you next time!"
+
+// This is a "chat game" because the program reacts to whatever
+// the player types - even though the responses are simple, it feels alive
+// Try adding your own questions and responses
+        </pre>
+      </div>
+      <p>Congratulations — you just built a chat-style program! It's simple, but this exact pattern (ask, listen, respond) is the foundation of every chatbot, virtual assistant, and interactive character you've ever talked to. Every extra question you add makes the conversation feel a little more alive.</p>
+    </section>
+
+    <p>Impressive work completing Chapter 7! You now know how programs communicate with users using INPUT and PRINT, and you built a simple chat game where the computer responds to whatever the person types. In the next chapter, we'll learn how programs make decisions using conditional logic — the tool that will let your chat game start branching in different directions.</p>
+
+    <video class="tutorial-video"
+        controls
+        controlsList="nofullscreen noremoteplayback nodownload"
+        disablePictureInPicture
+        playsinline>
+      <source src="YoBASIC7.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <nav class="chapter-nav">
+      <h3><a href="../../lessons/006/index.html"><<</a> Previous - Next <a href="../../lessons/008/index.html">>></a></h3>
+    </nav>
+
+</article>
+<!-- Iframe-side API: send "open example" messages to parent -->
+<script src="../../tutorial.js"></script>
+</body>
+</html>

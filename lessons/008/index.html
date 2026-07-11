@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>UI-BASIC Tutorial | Chapter 8: Conditional Logic</title>
+    <script src="../../redirect.js"></script>
+    <script src="../../bootstrap.js"></script>
+    <link rel="stylesheet" href="../../tutorial.css" />
+  </head>
+  <body>
+
+  <article class="tutorial"
+      data-chapter="8"
+      data-slug="conditional-logic">
+
+    <h3><a href="../../lessons/007/index.html"><<</a> Chapter 8 | Conditional Logic <a href="#">>></a></h3>
+
+    <video class="tutorial-video"
+        controls
+        controlsList="nofullscreen noremoteplayback nodownload"
+        disablePictureInPicture
+        playsinline>
+      <source src="YoBASIC8.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <p>Conditional logic is how a program decides what to do next, kind of like choosing whether to go left, go right, open the mysterious door, or absolutely not open the mysterious door because that is how horror movies start. In this chapter, we'll focus on IF, ELSE IF, and ELSE statements, which let your code respond differently depending on what's happening. We'll also briefly touch on other decision-making tools like switches and loops.</p>
+
+    <!-- ==========================
+         Example 1: IF Statements
+         ========================== -->
+
+    <section class="example"
+        data-example-id="ch8-if"
+        data-example-title="BASICIF.BAS">
+      <div class="example-header">
+        <h2>Example 1 | IF Statements</h2>
+        <button class="example-open"
+            data-example-id="ch8-if">
+          Open in UI-BASIC Editor
+        </button>
+      </div>
+      <ol>
+        <li>Click the button to open this program in a new editor tab.</li>
+        <li>Then click the Run button or press F9 to run the program.</li>
+      </ol>
+      <div class="example-files">
+        <h3>BASICIF.BAS</h3>
+        <pre data-file-name="BASICIF.BAS"
+            data-file-language="basic"
+            data-file-role="main">
+// IF runs a block of code only when a condition is true
+// If the condition is false, the code inside is simply skipped
+
+LET age = 20
+
+IF age >= 18 THEN
+    PRINT "You are an adult."
+END IF
+
+// Try changing age to a number below 18 and run it again
+// Notice that nothing prints - the condition was false
+        </pre>
+      </div>
+      <p>IF is the simplest decision a program can make: check something, and if it's true, run the code inside. If it's false, that code just gets skipped entirely, and the program moves on like nothing happened.</p>
+    </section>
+
+    <!-- ==========================
+         Example 2: ELSE and ELSE IF
+         ========================== -->
+
+    <section class="example"
+        data-example-id="ch8-elseif"
+        data-example-title="GRADECHECK.BAS">
+      <div class="example-header">
+        <h2>Example 2 | ELSE and ELSE IF</h2>
+        <button class="example-open"
+            data-example-id="ch8-elseif">
+          Open in UI-BASIC Editor
+        </button>
+      </div>
+      <ol>
+        <li>Click the button to open this program in a new editor tab.</li>
+        <li>Then click the Run button or press F9 to run the program.</li>
+      </ol>
+      <div class="example-files">
+        <h3>GRADECHECK.BAS</h3>
+        <pre data-file-name="GRADECHECK.BAS"
+            data-file-language="basic"
+            data-file-role="main">
+// ELSE IF lets you check multiple conditions in order
+// ELSE catches anything that didn't match a condition above it
+
+LET score = 82
+
+IF score >= 90 THEN
+    PRINT "Grade: A"
+ELSE IF score >= 80 THEN
+    PRINT "Grade: B"
+ELSE IF score >= 70 THEN
+    PRINT "Grade: C"
+ELSE IF score >= 60 THEN
+    PRINT "Grade: D"    
+ELSE
+    PRINT "Grade: F"
+END IF
+
+// Only ONE branch runs - as soon as a condition matches, the rest are skipped
+// Try changing score to see different grades
+        </pre>
+      </div>
+      <p>ELSE IF chains let you check several conditions in order, and ELSE is your safety net for anything that didn't match. Only one branch ever runs — the moment a condition is true, the program takes that path and skips the rest.</p>
+    </section>
+
+    <!-- ==========================
+         Example 3: Comparing Values
+         ========================== -->
+
+    <section class="example"
+        data-example-id="ch8-compare"
+        data-example-title="LOGINCHECK.BAS">
+      <div class="example-header">
+        <h2>Example 3 | Comparing Values</h2>
+        <button class="example-open"
+            data-example-id="ch8-compare">
+          Open in UI-BASIC Editor
+        </button>
+      </div>
+      <ol>
+        <li>Click the button to open this program in a new editor tab.</li>
+        <li>Then click the Run button or press F9 to run the program.</li>
+      </ol>
+      <div class="example-files">
+        <h3>LOGINCHECK.BAS</h3>
+        <pre data-file-name="LOGINCHECK.BAS"
+            data-file-language="basic"
+            data-file-role="main">
+// Comparison operators: = equal, <> not equal, > greater, < less, >= , <=
+// You can combine IF with INPUT to check what the user typed
+
+PRINT "Enter the secret password:"
+INPUT password$
+
+IF password$ = "YoBASIC" THEN
+    PRINT "Access granted!"
+ELSE
+    PRINT "Access denied."
+END IF
+
+// This same pattern is used behind every login screen you've ever seen
+// Try typing the wrong password to see the ELSE branch run
+        </pre>
+      </div>
+      <p>Comparison operators let you check more than just true/false switches — you can compare numbers, or check whether text typed by the user matches exactly. This is the exact logic behind login screens, password checks, and form validation.</p>
+    </section>
+
+    <!-- ==========================
+         Example 4: Putting It Together - Text Adventure Game
+         ========================== -->
+
+    <section class="example"
+        data-example-id="ch8-adventure"
+        data-example-title="ADVENTURE.BAS">
+      <div class="example-header">
+        <h2>Example 4 | Putting It All Together: A Text Adventure Game</h2>
+        <button class="example-open"
+            data-example-id="ch8-adventure">
+          Open in UI-BASIC Editor
+        </button>
+      </div>
+      <ol>
+        <li>Click the button to open this program in a new editor tab.</li>
+        <li>Then click the Run button or press F9 to run the program.</li>
+      </ol>
+      <div class="example-files">
+        <h3>ADVENTURE.BAS</h3>
+        <pre data-file-name="ADVENTURE.BAS"
+            data-file-language="basic"
+            data-file-role="main">
+// A simple text adventure - the player's choice decides what happens next
+
+PRINT "You are standing in a dark hallway."
+PRINT "There is a path to the left, a path to the right, and a mysterious door."
+PRINT "Choose your destiny. (LEFT, RIGHT, DOOR)"
+INPUT choice$
+
+IF choice$ = "LEFT" THEN
+    PRINT "You find a small chest with a shiny treasure inside. You win!"
+ELSE IF choice$ = "RIGHT" THEN
+    PRINT "You walk into a dead end. Nothing happens. You go back."
+ELSE IF choice$ = "DOOR" THEN
+    PRINT "You open the mysterious door. A monster was awaiting your arrival and lunges out. There is no escape. You get swallowed by the monster!"
+ELSE
+    PRINT "You stand there confused and the moment passes you by."
+END IF
+
+// This is a real text adventure game - built entirely with INPUT and IF
+// Try adding more choices, more paths, or even more monsters
+        </pre>
+      </div>
+      <p>You just built a real text adventure game! Every classic choose-your-own-path game, from the earliest computer games to modern branching dialogue in video games, is built on this exact idea: ask the player what they want to do, then use conditional logic to decide what happens next.</p>
+    </section>
+
+    <p>Amazing job making it to the end of Chapter 8! You now know how conditional logic helps programs make decisions using IF, ELSE IF, and ELSE, and you built a text adventure game where the player's choices changed the outcome. In the next chapter, we'll learn how programs can connect to outside services using APIs.</p>
+
+    <video class="tutorial-video"
+        controls
+        controlsList="nofullscreen noremoteplayback nodownload"
+        disablePictureInPicture
+        playsinline>
+      <source src="YoBASIC8.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <nav class="chapter-nav">
+      <h3><a href="../../lessons/007/index.html"><<</a> Previous - Next <a href="../../lessons/009/index.html">>></a></h3>
+    </nav>
+
+</article>
+<!-- Iframe-side API: send "open example" messages to parent -->
+<script src="../../tutorial.js"></script>
+</body>
+</html>
