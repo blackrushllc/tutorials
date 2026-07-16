@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="UIBASIC HTML" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="UIBASIC.com" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false" showAutoUploadSettingsWarning="false">
     <option name="confirmBeforeUploading" value="false" />
     <serverData>
       <paths name="ADG-APP">
@@ -60,13 +60,6 @@
         </serverdata>
       </paths>
       <paths name="Collections on Bob">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="DEV.atomicflix.com">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -164,7 +157,42 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="Implants">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Implants DEV">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="MIAMI-APP">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="MO-APP">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="MTO-APP">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="NEWEST BOB/ARC">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -178,14 +206,14 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="UIBASIC">
+      <paths name="TMV3">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
-      <paths name="UIBASIC HTML">
+      <paths name="UIBASIC.com">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
@@ -221,6 +249,13 @@
         </serverdata>
       </paths>
       <paths name="redeemer">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="track-my-implants">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
