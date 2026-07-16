@@ -335,111 +335,58 @@ NEXT i
 ### Recap Video Todo:  Victoria In-Progress
 - Combining LEN, LEFT$, RIGHT$, and MID$ gives you full control over string data. In the real world, product codes, dates, phone numbers, and IDs are often stored as a single string — knowing how to break them apart is a core data skill.
 
-## TUTORIAL PAGE 007 -  Storing Data
+## TUTORIAL PAGE 007 - User Input & Output
 
-### Introduction Video Todo: Taleah
-- In this tutorial we are going to learn about how to store data in UI-BASIC.
-- UI-BASIC provides several ways to store data, including files, databases, and cloud storage.
-- UI-BASIC has built-in support for storing data in databases, which makes it easy to create applications that can save and retrieve data.
-- We will also learn how to use SQL (Structured Query Language) to interact with databases and perform operations like creating tables, inserting data, and querying data.
-- By the end of this tutorial you will understand how to store and retrieve data in UI-BASIC.
-### Example 1 - Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Hello World...
-### Example 2 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-### Example 3 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-### Example 4 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-###  Recap Video Todo: Taleah 
-- In this tutorial we learned about how to store data in UI-BASIC.
-- We learned how to use UI-BASIC's built-in database to store and retrieve data.
-- We also learned how to use SQL to interact with databases and perform operations like creating tables, inserting data, and querying data.
-- In the next tutorial, we will learn about how to share your work in a web page.
+### Introduction Video Todo: Jenna
+- In this tutorial, we are going to learn about user input and output in YoBASIC.
+- That means our programs will not just sit there quietly like a toaster with commitment issues. They will actually ask the user questions, accept keyboard input, and respond with useful information.
+- We will focus on text-based input for now, but the same idea applies later when programs use buttons, forms, menus, and other graphical interfaces.
+- By the end of this chapter, you will understand how programs communicate with users, and you will build a simple chat-style game where the computer responds to what the player types.
+
+### Example 1 | Getting Basic Input from the Keyboard
+- INPUT - Pause the program and store whatever the user types into a variable.
+
+### Example 2 | Asking Multiple Questions
+- Chain several INPUT statements together to ask a short series of questions, both string and numeric.
+
+### Example 3 | Using Input to Shape Output
+- Use the value from INPUT to change what PRINT displays back to the user.
+
+### Example 4 | Putting It Together - Chat Game
+- Combine INPUT and PRINT to build a simple chat-style game where the computer reacts to what the player types.
+
+### Recap Video Todo: Jenna
+- In this chapter, we learned how user input and output work in YoBASIC. We learned how a program can ask questions, receive keyboard input, store answers, and print responses back to the screen.
+- We also saw how these simple text-based ideas connect to bigger programming concepts, like forms, buttons, and graphical user interfaces.
+- Most importantly, we used input and output to make a simple chat game, which is one of the first steps toward making programs feel interactive. In the next chapter, we will learn how programs make decisions using conditional logic.
+
 ---
 
-## TUTORIAL PAGE 008 - Sharing your Work in a Web Page
+## TUTORIAL PAGE 008 - Conditional Logic
 
-### Introduction Video
+### Introduction Video Todo: Jenna
+- In this tutorial, we are going to learn about conditional logic in YoBASIC. Conditional logic is how a program decides what to do next, kind of like choosing whether to go left, go right, open the mysterious door, or absolutely not open the mysterious door because that is how horror movies start.
+- We will focus on IF, ELSE IF, and ELSE statements, which let our code respond differently depending on what is happening.
+- We will also briefly touch on other decision-making tools that exist in programming, like switches and loops.
+- By the end of this chapter, you will use conditional logic to build a simple text adventure game.
 
-```
-FYI we made this video already, maybe we can use that between 008 and 008b (008a?):
-KALA_MAKE_WEBSITE_DOWNLOAD_BASIL: In this tutorial we are going to generate a sample website that you can on your 
-browse on your local computer. Click on the link below to download and install Basil, and then come back here for chapter two.
-```
+### Example 1 | IF Statements
+- IF - Run a block of code only when a condition is true.
 
-- In this tutorial we are going to create a sharable web page in UI-BASIC.
-- UI-BASIC makes it easy to share your web pages with others by providing built-in support for hosting and sharing web pages online.
-- We will learn how to create a web page, publish it online, and share it with others.
-- By the end of this tutorial you will understand how to share your web page in UI-BASIC.
-### Example 1 - Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Hello World...
-### Example 2 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-### Example 3 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-### Example 4 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-###  Recap Video 
-- In this tutorial we learned about how to share your work in a web page.
-- We learned how to use UI-BASIC's web server to host and share web pages online.
-- In the next tutorial, we will learn about creating and sharing a web application.
----
+### Example 2 | ELSE and ELSE IF
+- ELSE / ELSE IF - Handle alternate outcomes and multiple possible conditions.
 
-## TUTORIAL PAGE 008b - Projects - Creating and Sharing a Web Application
+### Example 3 | Comparing Values
+- Use comparison operators (=, <, >, etc.) to check conditions against user input.
 
-### Introduction Video
-- KALA_CREATE_WEBAPP_SHARE_PUBLISH_SHARE: In this tutorial we are going to use UI-BASIC to create a web application 
-- that you can share with your friends.  We will build on the basics that we've learned so far to create a web 
-- project that does something useful, and then publish and share your work online!
-### Example 1 - Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Hello World...
-### Example 2 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-### Example 3 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-### Example 4 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-###  Recap Video
-- In this tutorial we learned about creating and sharing a web application.
-- We learned how to use UI-BASIC's web server to host and share web pages online.
-- In the next tutorial, we will learn about handling errors in UI-BASIC.
+### Example 4 | Putting It Together - Text Adventure Game
+- Combine IF / ELSE IF / ELSE with INPUT to build a simple text adventure game: Go Left, Go Right, Open Door, Go Back, with one path finding treasure and another getting eaten by a monster.
+
+### Recap Video Todo: Jenna
+- In this chapter, we learned how conditional logic helps programs make decisions. We used IF, ELSE IF, and ELSE statements to check conditions and choose different paths through our code.
+- We saw how this same idea appears in almost every programming language, whether you are making a game, a website, a business app, or a tiny program that just refuses to behave.
+- We also used these ideas to create a simple text adventure game where the player's choices changed what happened next. In the next chapter, we will learn how programs can connect to outside services using APIs.
+
 ---
 
 ## TUTORIAL PAGE 009 - Exceptions
