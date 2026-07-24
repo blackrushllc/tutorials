@@ -389,76 +389,43 @@ NEXT i
 
 ---
 
-## TUTORIAL PAGE 009 - Exceptions
+## TUTORIAL PAGE 009 - Using APIs (Coming Soon)
 
-### Introduction Video
-- Error! In this tutorial we are going to learn about exceptions in UI-BASIC.
-- Exceptions are used to handle errors and unexpected situations in your programs.
-- By using exceptions, you can make your programs more robust and reliable.
-- We will learn how to use try/catch blocks to handle exceptions and perform error handling
-- By the end of this tutorial you will understand how to use exceptions in UI-BASIC.
-### Example 1 - Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Hello World...
-### Example 2 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-### Example 3 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-### Example 4 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-###  Recap Video 
-- In this tutorial we learned about exceptions in UI-BASIC.
-- We learned how to use try/catch blocks to handle exceptions and perform error handling.
-- In the next tutorial, we are going to take a look at Basil, a programming language that makes it easy to create websites and applications.
-- Basil is a programming language that is designed to be easy to learn and use, but powerful enough to create complex applications and large scale websites.
-- Now that you have a basic understanding of UI-BASIC, you've already learned everything you need to get started and create real world solutions with Basil! 
----
-
-## TUTORIAL PAGE 010 - Advanced Topics - Basil Part 1
-### Introduction Video
-- "Blah..."
-### Example 1 - Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Hello World...
-### Example 2 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-### Example 3 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-### Example 4 – Blah
-```
-print "Hello from UI-BASIC"
-```
-####  Listen: Blah...
-###  Recap Video 
+### Introduction Video Todo: Jenna
+- Coming Soon - Using APIs, specifically using the AI object, and AI.CHAT method to send prompts and receive a response.
 
 ---
 
-## TUTORIAL PAGE 011 - Advanced Topics - Basil Part 2
+## TUTORIAL PAGE 010 - Basic Math & Operators
 
+### Introduction Video Todo: Jenna
+- Basic Math & Operators, and a simple number game.
+
+### Example 1 | Basic Arithmetic
+- Use the four basic operators (+, -, *, /) to perform addition, subtraction, multiplication, and division.
+
+### Example 2 | Order of Operations
+- BASIC follows standard order of operations (parentheses, then * and /, then + and -); use parentheses to control the order yourself.
+
+### Example 3 | MOD and Remainders
+- Use MOD to get the remainder after division, useful for checking even/odd numbers or cycling through a range.
+
+### Example 4 | Number Guessing Game
+- Combine math and IF / ELSE IF / ELSE with INPUT to build a simple number guessing game that tells the player if their guess is too high, too low, or correct.
 
 ---
 
-## TUTORIAL PAGE 012 - Advanced Topics - Basil Part 3
+## TUTORIAL PAGE 011 - Error Handling (Coming Soon)
 
+### Introduction Video Todo: Jenna
+- Coming Soon - Error Handling (try/catch basic exception handling, whether to stop or continue, etc.)
+
+---
+
+## TUTORIAL PAGE 012 - Comments & Code Readability / Best Practices
+
+### Introduction Video Todo: Jenna
+- Comments & Code Readability / Best Practices, function and variable naming, etc.
 
 ---
 
