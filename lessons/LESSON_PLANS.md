@@ -195,11 +195,7 @@ RETURN without GOSUB at line 9
 ```
 ####  Listen: Blah...
 ###  Recap Video  (Todo Skye)
-- In this tutorial we learned about variables and functions in UI-BASIC.
-- We learned how to create functions, call them, and pass variables to them as parameters.
-- We also learned about recursion, which is when a function calls itself.
-- These concepts are fundamental to programming and are used in most programming languages.
-- In the next tutorial, we will learn about loops and how to use them in UI-BASIC. See you there!
+In this tutorial we learned about variables and functions in YoBASIC. We learned how to create functions, call them, and pass variables to them as parameters. We also learned about recursion, which is when a function calls itself. These concepts are fundamental to programming and are used in most programming languages. In the next tutorial, we will learn about loops and how to use them in YoBASIC. See you there!
 ---
 
 ## TUTORIAL PAGE 003 - Loops
@@ -335,58 +331,171 @@ NEXT i
 ### Recap Video Todo:  Victoria In-Progress
 - Combining LEN, LEFT$, RIGHT$, and MID$ gives you full control over string data. In the real world, product codes, dates, phone numbers, and IDs are often stored as a single string — knowing how to break them apart is a core data skill.
 
-## TUTORIAL PAGE 007 - User Input & Output
 
-### Introduction Video Todo: Jenna
-- In this tutorial, we are going to learn about user input and output in YoBASIC.
-- That means our programs will not just sit there quietly like a toaster with commitment issues. They will actually ask the user questions, accept keyboard input, and respond with useful information.
-- We will focus on text-based input for now, but the same idea applies later when programs use buttons, forms, menus, and other graphical interfaces.
-- By the end of this chapter, you will understand how programs communicate with users, and you will build a simple chat-style game where the computer responds to what the player types.
 
-### Example 1 | Getting Basic Input from the Keyboard
-- INPUT - Pause the program and store whatever the user types into a variable.
 
-### Example 2 | Asking Multiple Questions
-- Chain several INPUT statements together to ask a short series of questions, both string and numeric.
 
-### Example 3 | Using Input to Shape Output
-- Use the value from INPUT to change what PRINT displays back to the user.
 
-### Example 4 | Putting It Together - Chat Game
-- Combine INPUT and PRINT to build a simple chat-style game where the computer reacts to what the player types.
+NEW CHAPTERS 7 - 12  (old proposed ones are below this)
 
-### Recap Video Todo: Jenna
-- In this chapter, we learned how user input and output work in YoBASIC. We learned how a program can ask questions, receive keyboard input, store answers, and print responses back to the screen.
-- We also saw how these simple text-based ideas connect to bigger programming concepts, like forms, buttons, and graphical user interfaces.
-- Most importantly, we used input and output to make a simple chat game, which is one of the first steps toward making programs feel interactive. In the next chapter, we will learn how programs make decisions using conditional logic.
+INTRO and RECAPS:
 
+**Chapter 7 Intro — User Input & Output**
+In this tutorial, we are going to learn about user input and output in YoBASIC. That means our programs will not just sit there quietly like a toaster with commitment issues. They will actually ask the user questions, accept keyboard input, and respond with useful information. We will focus on text-based input for now, but the same idea applies later when programs use buttons, forms, menus, and other graphical interfaces. By the end of this chapter, you will understand how programs communicate with users, and you will build a simple chat-style game where the computer responds to what the player types.
+
+**Chapter 7 Recap — User Input & Output**
+In this chapter, we learned how user input and output work in YoBASIC. We learned how a program can ask questions, receive keyboard input, store answers, and print responses back to the screen. We also saw how these simple text-based ideas connect to bigger programming concepts, like forms, buttons, and graphical user interfaces. Most importantly, we used input and output to make a simple chat game, which is one of the first steps toward making programs feel interactive. In the next chapter, we will learn how programs make decisions using conditional logic.
+
+**Chapter 8 Intro — Conditional Logic**
+In this tutorial, we are going to learn about conditional logic in YoBASIC. Conditional logic is how a program decides what to do next, kind of like choosing whether to go left, go right, open the mysterious door, or absolutely not open the mysterious door because that is how horror movies start. We will focus on IF, ELSE IF, and ELSE statements, which let our code respond differently depending on what is happening. We will also briefly touch on other decision-making tools that exist in programming, like switches and loops. By the end of this chapter, you will use conditional logic to build a simple text adventure game.
+
+**Chapter 8 Recap — Conditional Logic**
+In this chapter, we learned how conditional logic helps programs make decisions. We used IF, ELSE IF, and ELSE statements to check conditions and choose different paths through our code. We saw how this same idea appears in almost every programming language, whether you are making a game, a website, a business app, or a tiny program that just refuses to behave. We also used these ideas to create a simple text adventure game where the player’s choices changed what happened next. In the next chapter, we will learn how programs can connect to outside services using APIs.
+
+**Chapter 9 Intro — Using APIs**
+In this tutorial, we are going to learn about APIs in YoBASIC. An API is a way for one program to talk to another program or service. That may sound fancy, but the basic idea is simple: your code sends a request, and something else sends back a response. In this chapter, we will focus on using the AI object and the AI.CHAT method to send prompts and receive answers. This is a great example of how modern programs can connect to powerful tools outside of themselves. By the end of this chapter, you will understand the basic idea of using an API, and you will see how a simple program can communicate with AI.
+
+**Chapter 9 Recap — Using APIs**
+In this chapter, we learned what an API is and how it allows programs to communicate with outside services. We focused on using the AI object and the AI.CHAT method to send a prompt and receive a response. We saw that APIs are used everywhere in modern programming, from weather apps and payment systems to maps, games, websites, and AI tools. Even though the details can vary between languages and platforms, the basic pattern is usually the same: send a request, get a response, and use that response in your program. In the next chapter, we will return to one of the classic building blocks of coding: math and operators.
+
+**Chapter 10 Intro — Basic Math & Operators**
+In this tutorial, we are going to learn about basic math and operators in YoBASIC. Do not worry, this is not the part where someone suddenly rolls in a chalkboard and ruins your day. We are going to focus on the practical math that programs use all the time, like adding, subtracting, multiplying, dividing, comparing values, and working with simple calculations. Operators are the symbols and commands that let code do this work. By the end of this chapter, you will understand how programs use math and comparisons, and you will build a simple number game to practice these ideas.
+
+**Chapter 10 Recap — Basic Math & Operators**
+In this chapter, we learned how basic math and operators work in YoBASIC. We practiced using code to add, subtract, multiply, divide, compare values, and make simple calculations. We also learned that math in programming is not just for calculators. It is used in games, websites, business tools, animations, forms, scoring systems, and almost anything that needs to measure, count, compare, or decide. We used these concepts to build a simple number game, giving us another example of how small programming ideas can turn into something interactive. In the next chapter, we will learn what to do when things go wrong.
+
+**Chapter 11 Intro — Error Handling**
+In this tutorial, we are going to learn about error handling in YoBASIC. Every programmer eventually writes code that breaks, crashes, freezes, complains, or stares back at them like it knows their secrets. Error handling is how we prepare for problems before they ruin the whole program. We will look at basic try and catch concepts, and we will talk about when a program should stop, when it should continue, and how to show helpful messages when something goes wrong. By the end of this chapter, you will understand why good programs do not just work when everything goes perfectly. They also know how to respond when things go sideways.
+
+**Chapter 11 Recap — Error Handling**
+In this chapter, we learned the basics of error handling in YoBASIC. We talked about how programs can run into unexpected problems, and how try and catch structures can help us respond to those problems in a controlled way. We also learned that sometimes a program should stop, sometimes it should continue, and sometimes it should explain the problem to the user instead of simply failing. These ideas are important in every programming language because real-world code has to deal with real-world surprises. In the next chapter, we will learn how to make our code easier to read, understand, and maintain.
+
+**Chapter 12 Intro — Comments & Code Readability**
+In this tutorial, we are going to learn about comments, code readability, and basic programming best practices. Writing code that works is important, but writing code that another human can understand is also a big deal. That other human might be a teammate, a future student, or even you three weeks from now wondering what past-you was thinking. We will learn how comments can explain important parts of a program, and how good names for variables and functions can make code much easier to follow. By the end of this chapter, you will understand how to make your programs cleaner, clearer, and less likely to become a spooky haunted mansion of confusing code.
+
+**Chapter 12 Recap — Comments & Code Readability**
+In this chapter, we learned how comments and good coding habits make programs easier to understand. We talked about using comments to explain important ideas, choosing clear names for variables and functions, and organizing code so it is easier to read and maintain. We also learned that clean code is not just about looking professional. It helps prevent mistakes, makes debugging easier, and allows other people to work with your program more comfortably. At this point, you have learned many of the core ideas behind programming, including input, output, decisions, APIs, math, error handling, and readability. These are fundamentals you can use in YoBASIC, Basil, and many other programming languages.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## TUTORIAL PAGE 007 -  Storing Data
+
+### Introduction Video Todo: Taleah
+- In this tutorial we are going to learn about how to store data in UI-BASIC.
+- UI-BASIC provides several ways to store data, including files, databases, and cloud storage.
+- UI-BASIC has built-in support for storing data in databases, which makes it easy to create applications that can save and retrieve data.
+- We will also learn how to use SQL (Structured Query Language) to interact with databases and perform operations like creating tables, inserting data, and querying data.
+- By the end of this tutorial you will understand how to store and retrieve data in UI-BASIC.
+### Example 1 - Blah
+```
+print "Hello from UI-BASIC"
+```
+####  Listen: Hello World...
+### Example 2 – Blah
+```
+print "Hello from UI-BASIC"
+```
+####  Listen: Blah...
+### Example 3 – Blah
+```
+print "Hello from UI-BASIC"
+```
+####  Listen: Blah...
+### Example 4 – Blah
+```
+print "Hello from UI-BASIC"
+```
+####  Listen: Blah...
+###  Recap Video Todo: Taleah 
+- In this tutorial we learned about how to store data in UI-BASIC.
+- We learned how to use UI-BASIC's built-in database to store and retrieve data.
+- We also learned how to use SQL to interact with databases and perform operations like creating tables, inserting data, and querying data.
+- In the next tutorial, we will learn about how to share your work in a web page.
 ---
 
-## TUTORIAL PAGE 008 - Conditional Logic
+## TUTORIAL PAGE 008 - Sharing your Work in a Web Page
 
-### Introduction Video Todo: Jenna
-- In this tutorial, we are going to learn about conditional logic in YoBASIC. Conditional logic is how a program decides what to do next, kind of like choosing whether to go left, go right, open the mysterious door, or absolutely not open the mysterious door because that is how horror movies start.
-- We will focus on IF, ELSE IF, and ELSE statements, which let our code respond differently depending on what is happening.
-- We will also briefly touch on other decision-making tools that exist in programming, like switches and loops.
-- By the end of this chapter, you will use conditional logic to build a simple text adventure game.
+### Introduction Video
 
-### Example 1 | IF Statements
-- IF - Run a block of code only when a condition is true.
+```
+FYI we made this video already, maybe we can use that between 008 and 008b (008a?):
+KALA_MAKE_WEBSITE_DOWNLOAD_BASIL: In this tutorial we are going to generate a sample website that you can on your 
+browse on your local computer. Click on the link below to download and install Basil, and then come back here for chapter two.
+```
 
-### Example 2 | ELSE and ELSE IF
-- ELSE / ELSE IF - Handle alternate outcomes and multiple possible conditions.
+- In this tutorial we are going to create a sharable web page in UI-BASIC.
+- UI-BASIC makes it easy to share your web pages with others by providing built-in support for hosting and sharing web pages online.
+- We will learn how to create a web page, publish it online, and share it with others.
+- By the end of this tutorial you will understand how to share your web page in UI-BASIC.
+### Example 1 - Blah
+```
+print "Hello from UI-BASIC"
+```
+####  Listen: Hello World...
+### Example 2 – Blah
+```
+print "Hello from UI-BASIC"
+```
+####  Listen: Blah...
+### Example 3 – Blah
+```
+print "Hello from UI-BASIC"
+```
+####  Listen: Blah...
+### Example 4 – Blah
+```
+print "Hello from UI-BASIC"
+```
+####  Listen: Blah...
+###  Recap Video 
+- In this tutorial we learned about how to share your work in a web page.
+- We learned how to use UI-BASIC's web server to host and share web pages online.
+- In the next tutorial, we will learn about creating and sharing a web application.
+---
 
-### Example 3 | Comparing Values
-- Use comparison operators (=, <, >, etc.) to check conditions against user input.
+## TUTORIAL PAGE 008b - Projects - Creating and Sharing a Web Application
 
-### Example 4 | Putting It Together - Text Adventure Game
-- Combine IF / ELSE IF / ELSE with INPUT to build a simple text adventure game: Go Left, Go Right, Open Door, Go Back, with one path finding treasure and another getting eaten by a monster.
-
-### Recap Video Todo: Jenna
-- In this chapter, we learned how conditional logic helps programs make decisions. We used IF, ELSE IF, and ELSE statements to check conditions and choose different paths through our code.
-- We saw how this same idea appears in almost every programming language, whether you are making a game, a website, a business app, or a tiny program that just refuses to behave.
-- We also used these ideas to create a simple text adventure game where the player's choices changed what happened next. In the next chapter, we will learn how programs can connect to outside services using APIs.
-
+### Introduction Video
+- KALA_CREATE_WEBAPP_SHARE_PUBLISH_SHARE: In this tutorial we are going to use UI-BASIC to create a web application 
+- that you can share with your friends.  We will build on the basics that we've learned so far to create a web 
+- project that does something useful, and then publish and share your work online!
+### Example 1 - Blah
+```
+print "Hello from UI-BASIC"
+```
+####  Listen: Hello World...
+### Example 2 – Blah
+```
+print "Hello from UI-BASIC"
+```
+####  Listen: Blah...
+### Example 3 – Blah
+```
+print "Hello from UI-BASIC"
+```
+####  Listen: Blah...
+### Example 4 – Blah
+```
+print "Hello from UI-BASIC"
+```
+####  Listen: Blah...
+###  Recap Video
+- In this tutorial we learned about creating and sharing a web application.
+- We learned how to use UI-BASIC's web server to host and share web pages online.
+- In the next tutorial, we will learn about handling errors in UI-BASIC.
 ---
 
 ## TUTORIAL PAGE 009 - Exceptions
