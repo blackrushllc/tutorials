@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>UI-BASIC Tutorial | Chapter 12: Comments & Code Readability</title>
+    <script src="../../redirect.js"></script>
+    <script src="../../bootstrap.js"></script>
+    <link rel="stylesheet" href="../../tutorial.css" />
+  </head>
+  <body>
+
+    <article class="tutorial"
+      data-chapter="12"
+      data-slug="comments-code-readability">
+
+      <h3><a href="../../lessons/011/index.html"><<</a> Chapter 12 | Comments & Code Readability / Best Practices <a href="#">>></a></h3>
+
+      <video class="tutorial-video"
+        controls
+        controlsList="nofullscreen noremoteplayback nodownload"
+        disablePictureInPicture
+        playsinline>
+      <source src="YoBASIC12.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+      </video>
+
+      <p>Writing code that works is only half the job - writing code that's easy to understand later on is just as important.</p>
+
+      <!-- ===========================
+           Example 1: Writing Comments
+           =========================== -->
+
+      <section class="example"
+        data-example-id="ch12-comments"
+        data-example-title="COMMENTS.BAS">
+        <div class="example-header">
+          <h2>Example 1 | Writing Comments</h2>
+          <button class="example-open"
+            data-example-id="ch12-comments">
+          Open in UI-BASIC Editor
+          </button>
+        </div>
+        <ol>
+          <li>Click the button to open this program in a new editor tab.</li>
+          <li>Then click the Run button or press F9 to run the program.</li>
+        </ol>
+        <div class="example-files">
+          <h3>COMMENTS.BAS</h3>
+          <pre data-file-name="COMMENTS.BAS"
+            data-file-language="basic"
+            data-file-role="main">
+// Comments start with // and are ignored when the program runs
+// Use them to explain WHY your code does something, not just WHAT it does
+
+LET taxRate = 0.08
+// Applying local sales tax to the subtotal before checkout
+LET subtotal = 50
+LET total = subtotal + (subtotal * taxRate)
+
+PRINT "Total with tax: "
+PRINT total
+
+// Good comments save you time later - bad or missing comments cost you time later
+          </pre>
+        </div>
+        <p>Good comments explain the reasoning behind your code, so future-you (or a teammate) doesn't have to guess.</p>
+      </section>
+
+      <!-- ===========================
+           Example 2: Meaningful Variable Names
+           =========================== -->
+
+      <section class="example"
+        data-example-id="ch12-varnames"
+        data-example-title="VARNAMES.BAS">
+        <div class="example-header">
+          <h2>Example 2 | Meaningful Variable Names</h2>
+          <button class="example-open"
+            data-example-id="ch12-varnames">
+          Open in UI-BASIC Editor
+          </button>
+        </div>
+        <ol>
+          <li>Click the button to open this program in a new editor tab.</li>
+          <li>Then click the Run button or press F9 to run the program.</li>
+        </ol>
+        <div class="example-files">
+          <h3>VARNAMES.BAS</h3>
+          <pre data-file-name="VARNAMES.BAS"
+            data-file-language="basic"
+            data-file-role="main">
+// Bad: short, unclear names that don't explain their purpose
+LET x = 20
+LET y = 5
+LET z = x * y
+
+PRINT z
+
+// Good: descriptive names that explain what the variable holds
+LET itemPrice = 20
+LET itemQuantity = 5
+LET orderTotal = itemPrice * itemQuantity
+
+PRINT orderTotal
+
+// Both blocks do the same math - only one is easy to understand at a glance
+          </pre>
+        </div>
+        <p>Descriptive variable names turn your code into something readable, almost like plain English.</p>
+      </section>
+
+      <!-- ===========================
+           Example 3: Consistent Naming Conventions
+           =========================== -->
+
+      <section class="example"
+        data-example-id="ch12-naming"
+        data-example-title="NAMING.BAS">
+        <div class="example-header">
+          <h2>Example 3 | Consistent Naming Conventions</h2>
+          <button class="example-open"
+            data-example-id="ch12-naming">
+          Open in UI-BASIC Editor
+          </button>
+        </div>
+        <ol>
+          <li>Click the button to open this program in a new editor tab.</li>
+          <li>Then click the Run button or press F9 to run the program.</li>
+        </ol>
+        <div class="example-files">
+          <h3>NAMING.BAS</h3>
+          <pre data-file-name="NAMING.BAS"
+            data-file-language="basic"
+            data-file-role="main">
+// Picking one naming style and sticking with it makes code easier to scan
+// Example: use camelCase for variables, and $ for string variables
+
+LET playerName$ = "Justin"
+LET playerScore = 0
+LET playerLives = 3
+
+PRINT "Player: "
+PRINT playerName$
+PRINT "Score: "
+PRINT playerScore
+PRINT "Lives: "
+PRINT playerLives
+
+// Mixing styles like PlayerName, player_score, and PLAYERLIVES in the same
+// program makes it harder to predict what a variable is called
+// Pick a convention early, and use it everywhere
+          </pre>
+        </div>
+        <p>Consistency matters more than which style you pick - it lets you predict variable names instead of hunting for them.</p>
+      </section>
+
+      <!-- ===========================
+           Example 4: Refactoring Messy Code
+           =========================== -->
+
+      <section class="example"
+        data-example-id="ch12-refactor"
+        data-example-title="REFACTOR.BAS">
+        <div class="example-header">
+          <h2>Example 4 | Refactoring Messy Code</h2>
+          <button class="example-open"
+            data-example-id="ch12-refactor">
+          Open in UI-BASIC Editor
+          </button>
+        </div>
+        <ol>
+          <li>Click the button to open this program in a new editor tab.</li>
+          <li>Then click the Run button or press F9 to run the program.</li>
+        </ol>
+        <div class="example-files">
+          <h3>REFACTOR.BAS</h3>
+          <pre data-file-name="REFACTOR.BAS"
+            data-file-language="basic"
+            data-file-role="main">
+// Before: works fine, but hard to follow
+LET a = 15
+LET b = 3
+LET c = a * b
+IF c > 40 THEN
+    PRINT "big"
+ELSE
+    PRINT "small"
+END IF
+
+// After: same logic, cleaned up with comments and clear names
+
+// Calculate order total and flag large orders for review
+LET unitPrice = 15
+LET quantity = 3
+LET orderTotal = unitPrice * quantity
+
+IF orderTotal > 40 THEN
+    PRINT "Large order - flagged for review"
+ELSE
+    PRINT "Standard order"
+END IF
+
+// Same output, but now anyone reading it understands the business logic
+          </pre>
+        </div>
+        <p>Refactoring doesn't change what your code does - it changes how easy your code is to trust and maintain.</p>
+      </section>
+
+      <p>Great work finishing Chapter 12! You now know how to write comments that explain your reasoning, and choose variable and function names that make your code easy to read and maintain - skills that matter in every language, not just YoBASIC.</p>
+
+      <nav class="chapter-nav">
+        <h3><a href="../../lessons/011/index.html"><<</a> Previous - Next <a href="#">>></a></h3>
+      </nav>
+
+</article>
+<!-- Iframe-side API: send "open example" messages to parent -->
+<script src="../../tutorial.js"></script>
+</body>
+</html>

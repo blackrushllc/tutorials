@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>UI-BASIC Tutorial | Chapter 10: Basic Math & Operators</title>
+    <script src="../../redirect.js"></script>
+    <script src="../../bootstrap.js"></script>
+    <link rel="stylesheet" href="../../tutorial.css" />
+  </head>
+  <body>
+
+    <article class="tutorial"
+      data-chapter="10"
+      data-slug="basic-math-operators">
+
+      <h3><a href="../../lessons/009/index.html"><<</a> Chapter 10 | Basic Math & Operators <a href="../../lessons/011/index.html">>></a></h3>
+
+      <video class="tutorial-video"
+        controls
+        controlsList="nofullscreen noremoteplayback nodownload"
+        disablePictureInPicture
+        playsinline>
+      <source src="YoBASIC10.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+      </video>
+
+      <p>Basic math and operators let your program calculate values, kind of like having a calculator built directly into your code.</p>
+
+      <!-- ===========================
+           Example 1: Basic Arithmetic
+           =========================== -->
+
+      <section class="example"
+        data-example-id="ch10-arithmetic"
+        data-example-title="ADDSUB.BAS">
+        <div class="example-header">
+          <h2>Example 1 | Basic Arithmetic</h2>
+          <button class="example-open"
+            data-example-id="ch10-arithmetic">
+          Open in UI-BASIC Editor
+          </button>
+        </div>
+        <ol>
+          <li>Click the button to open this program in a new editor tab.</li>
+          <li>Then click the Run button or press F9 to run the program.</li>
+        </ol>
+        <div class="example-files">
+          <h3>ADDSUB.BAS</h3>
+          <pre data-file-name="ADDSUB.BAS"
+            data-file-language="basic"
+            data-file-role="main">
+// Basic math operators: + add, - subtract, * multiply, / divide
+// LET assigns the result of a calculation to a variable
+
+LET a = 10
+LET b = 3
+
+PRINT "a + b = "
+PRINT a + b
+
+PRINT "a - b = "
+PRINT a - b
+
+PRINT "a * b = "
+PRINT a * b
+
+PRINT "a / b = "
+PRINT a / b
+
+// Try changing a and b to see different results
+          </pre>
+        </div>
+        <p>These four operators are the building blocks of every calculation your program will ever make!</p>
+      </section>
+
+      <!-- ===========================
+           Example 2: Order of Operations
+           =========================== -->
+
+      <section class="example"
+        data-example-id="ch10-orderops"
+        data-example-title="ORDEROPS.BAS">
+        <div class="example-header">
+          <h2>Example 2 | Order of Operations</h2>
+          <button class="example-open"
+            data-example-id="ch10-orderops">
+          Open in UI-BASIC Editor
+          </button>
+        </div>
+        <ol>
+          <li>Click the button to open this program in a new editor tab.</li>
+          <li>Then click the Run button or press F9 to run the program.</li>
+        </ol>
+        <div class="example-files">
+          <h3>ORDEROPS.BAS</h3>
+          <pre data-file-name="ORDEROPS.BAS"
+            data-file-language="basic"
+            data-file-role="main">
+// BASIC follows standard order of operations: parentheses first, then * and /, then + and -
+// Use parentheses to control the order yourself
+
+LET result1 = 2 + 3 * 4
+PRINT "2 + 3 * 4 = "
+PRINT result1
+
+LET result2 = (2 + 3) * 4
+PRINT "(2 + 3) * 4 = "
+PRINT result2
+
+// Notice how parentheses changed the answer from 14 to 20
+// When in doubt, use parentheses to make your intent clear
+          </pre>
+        </div>
+        <p>Order of operations decides which part of a calculation happens first, and parentheses let you override it.</p>
+      </section>
+
+      <!-- ===========================
+           Example 3: MOD and Remainders
+           =========================== -->
+
+      <section class="example"
+        data-example-id="ch10-mod"
+        data-example-title="MODCHECK.BAS">
+        <div class="example-header">
+          <h2>Example 3 | MOD and Remainders</h2>
+          <button class="example-open"
+            data-example-id="ch10-mod">
+          Open in UI-BASIC Editor
+          </button>
+        </div>
+        <ol>
+          <li>Click the button to open this program in a new editor tab.</li>
+          <li>Then click the Run button or press F9 to run the program.</li>
+        </ol>
+        <div class="example-files">
+          <h3>MODCHECK.BAS</h3>
+          <pre data-file-name="MODCHECK.BAS"
+            data-file-language="basic"
+            data-file-role="main">
+// MOD gives you the remainder after division
+// It's useful for checking even/odd numbers, or cycling through a range
+
+LET num = 17
+
+IF num MOD 2 = 0 THEN
+    PRINT "Even number"
+ELSE
+    PRINT "Odd number"
+END IF
+
+LET remainder = num MOD 5
+PRINT "17 MOD 5 = "
+PRINT remainder
+
+// Try changing num to see how the remainder changes
+          </pre>
+        </div>
+        <p>MOD is one of the most useful operators for things like checking even/odd numbers or cycling through a fixed range of values.</p>
+      </section>
+
+      <!-- ===========================
+           Example 4: Number Guessing Game
+           =========================== -->
+
+      <section class="example"
+        data-example-id="ch10-game"
+        data-example-title="NUMBERGAME.BAS">
+        <div class="example-header">
+          <h2>Example 4 | Number Guessing Game</h2>
+          <button class="example-open"
+            data-example-id="ch10-game">
+          Open in UI-BASIC Editor
+          </button>
+        </div>
+        <ol>
+          <li>Click the button to open this program in a new editor tab.</li>
+          <li>Then click the Run button or press F9 to run the program.</li>
+        </ol>
+        <div class="example-files">
+          <h3>NUMBERGAME.BAS</h3>
+          <pre data-file-name="NUMBERGAME.BAS"
+            data-file-language="basic"
+            data-file-role="main">
+// A simple number guessing game using math and comparisons
+// The secret number is fixed for now - try changing it to make your own version
+
+LET secretNumber = 42
+
+PRINT "I'm thinking of a number between 1 and 100."
+PRINT "Enter your guess:"
+INPUT guess
+
+IF guess = secretNumber THEN
+    PRINT "You got it! The number was "
+    PRINT secretNumber
+ELSE IF guess > secretNumber THEN
+    LET difference = guess - secretNumber
+    PRINT "Too high! You were off by "
+    PRINT difference
+ELSE
+    LET difference = secretNumber - guess
+    PRINT "Too low! You were off by "
+    PRINT difference
+END IF
+
+// Try wrapping this in a loop (from Chapter 3) to let the player guess again
+          </pre>
+        </div>
+        <p>You just built a working number guessing game using nothing but math and IF statements - the same core logic behind way more complex games.</p>
+      </section>
+
+      <p>Congratulations on making it to the end of Chapter 10! You now know how to use math operators, control order of operations, and combine math with IF statements to build something interactive.</p>
+
+      <nav class="chapter-nav">
+        <h3><a href="../../lessons/009/index.html"><<</a> Previous - Next <a href="../../lessons/011/index.html">>></a></h3>
+      </nav>
+
+</article>
+<!-- Iframe-side API: send "open example" messages to parent -->
+<script src="../../tutorial.js"></script>
+</body>
+</html>
